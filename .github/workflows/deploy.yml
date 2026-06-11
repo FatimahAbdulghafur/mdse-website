@@ -27,7 +27,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build
         env:
-          BASE_PATH: /mdse-website/
+          BASE_PATH: /
       - run: cp dist/public/index.html dist/public/404.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
