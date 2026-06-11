@@ -18,7 +18,7 @@ const founders = [
   },
   {
     name: "Fatimah Abdulghafur",
-    role: "Co-Founder & CEO",
+    role: "Co-Founder & COO",
     credentials: "PhD Candidate, MSc",
     bio: "A specialist in exploration geophysics with expertise spanning seismic data analysis and geomagnetism, Fatimah served as Principal Specialist Geophysicist at Ma'aden, Saudi Arabia's national mining company, before dedicating herself to MDSE. She is a PhD candidate at Macquarie University, researching advanced multi-observable joint inversion methods. Previously, she worked as an Exploration Geophysicist at Fleet Space Technologies in Australia and as a Seismic Data Processing Engineer at CNPC. A speaker at the Future Minerals Forum 2026, GEOMIN, and AEGC, Fatimah brings cutting-edge technical knowledge and firsthand understanding of Saudi mining operations to MDSE.",
     highlights: [
