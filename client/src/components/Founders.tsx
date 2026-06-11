@@ -5,7 +5,7 @@ import { GraduationCap, Award, Globe, BookOpen } from "lucide-react";
 const founders = [
   {
     name: "Mahdi AbuAli",
-    role: "Co-Founder",
+    role: "Co-Founder & CEO",
     credentials: "PhD, MSc",
     bio: "Senior energy executive and exploration geoscientist with 35+ years across oil, gas and mining. Former Saudi Aramco Senior Geological Consultant with a record of adding multi-million barrels of oil and several trillion cubic feet (Tcf) of gas to exploration portfolios. Led joint-venture programmes with international oil companies (IOCs) including Shell, TotalEnergies, Repsol, Sinopec, Eni and Lukoil. Recent leadership includes COO & VP at Raphael Energy Group and consultant/adviser to Halliburton, KOC and Axiom Exploration, expanding into mineral exploration and energy-transition technologies.",
     highlights: [
