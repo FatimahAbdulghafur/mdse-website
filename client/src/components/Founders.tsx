@@ -1,12 +1,25 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { GraduationCap, Award, Globe, BookOpen } from "lucide-react";
+import {
+  GraduationCap,
+  Award,
+  Globe,
+  BookOpen,
+  Cpu,
+  LineChart,
+  ClipboardCheck,
+} from "lucide-react";
 
-const founders = [
+const MAHDI_IMG = `${import.meta.env.BASE_URL}images/mahdi.jpg`;
+
+const people = [
   {
+    kind: "leader" as const,
+    tag: "Leadership",
     name: "Mahdi AbuAli",
-    role: "Co-Founder & CEO",
+    role: "Founder, CEO & Owner",
     credentials: "PhD, MSc",
+    image: MAHDI_IMG,
     bio: "Senior energy executive and exploration geoscientist with 35+ years across oil, gas and mining. Former Saudi Aramco Senior Geological Consultant with a record of adding multi-million barrels of oil and several trillion cubic feet (Tcf) of gas to exploration portfolios. Led joint-venture programmes with international oil companies (IOCs) including Shell, TotalEnergies, Repsol, Sinopec, Eni and Lukoil. Recent leadership includes COO & VP at Raphael Energy Group and consultant/adviser to Halliburton, KOC and Axiom Exploration, expanding into mineral exploration and energy-transition technologies.",
     highlights: [
       { icon: GraduationCap, text: "PhD RWTH Aachen · MSc Colorado School of Mines" },
@@ -17,17 +30,20 @@ const founders = [
     initial: "M",
   },
   {
-    name: "Fatimah Abdulghafur",
-    role: "Co-Founder & COO",
-    credentials: "PhD Candidate, MSc",
-    bio: "A specialist in exploration geophysics with expertise spanning seismic data analysis and geomagnetism, Fatimah served as Principal Specialist Geophysicist at Ma'aden, Saudi Arabia's national mining company, before dedicating herself to MDSE. She is a PhD candidate at Macquarie University, researching advanced multi-observable joint inversion methods. Previously, she worked as an Exploration Geophysicist at Fleet Space Technologies in Australia and as a Seismic Data Processing Engineer at CNPC. A speaker at the Future Minerals Forum 2026, GEOMIN, and AEGC, Fatimah brings cutting-edge technical knowledge and firsthand understanding of Saudi mining operations to MDSE.",
+    kind: "advisor" as const,
+    tag: "Advisor",
+    name: "Tolun AI",
+    role: "Strategic & Technical Advisor",
+    credentials: "Independent Advisory Firm",
+    image: null,
+    bio: "An independent strategic and technical advisory firm supporting MDSE with AI-enabled geoscience analysis, market and competitive intelligence, and rigorous partner and proposal evaluation. Tolun AI brings advanced analytical capability to MDSE's technical due diligence — helping the Establishment select the right international drilling partners and structure each engagement for delivery in the Kingdom. Tolun AI advises; MDSE decides and executes.",
     highlights: [
-      { icon: GraduationCap, text: "PhD Candidate, Macquarie University · Published Researcher" },
-      { icon: Award, text: "Former Principal Specialist Geophysicist, Ma'aden" },
-      { icon: Globe, text: "International Experience: Australia, China, Saudi Arabia" },
-      { icon: BookOpen, text: "GEOMIN Committee Member · Speaker: FMF 2026, GEOMIN, AEGC" },
+      { icon: Cpu, text: "AI-enabled geoscience & data analysis" },
+      { icon: LineChart, text: "Market & competitive intelligence" },
+      { icon: ClipboardCheck, text: "Partner & proposal evaluation support" },
+      { icon: Globe, text: "Independent advisory · global expertise" },
     ],
-    initial: "F",
+    initial: "T",
   },
 ];
 
@@ -62,29 +78,29 @@ export default function Founders() {
             className="text-[#D4A017] text-xs tracking-[0.3em] uppercase mb-4"
             style={{ fontFamily: "var(--font-body)", fontWeight: 600 }}
           >
-            Leadership
+            Leadership &amp; Advisory
           </p>
           <h2
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2A2A2A] leading-tight mb-6"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Meet the <span className="gold-text">Founders</span>
+            Led by <span className="gold-text">Experience</span>
           </h2>
           <p
             className="text-[#8A8278] text-base lg:text-lg max-w-2xl mx-auto"
             style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
           >
-            Decades of combined experience across geoscience, exploration, and
-            mining operations — now channeled into building a trusted mining
-            services partner for Saudi Arabia.
+            Decades of geoscience, exploration, and mining leadership — backed by
+            an independent technical advisor — channeled into building a trusted
+            mining services partner for Saudi Arabia.
           </p>
         </motion.div>
 
-        {/* Founders grid */}
+        {/* Leadership & advisory grid */}
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
-          {founders.map((founder, i) => (
+          {people.map((person, i) => (
             <motion.div
-              key={founder.name}
+              key={person.name}
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 + i * 0.2 }}
@@ -97,32 +113,49 @@ export default function Founders() {
                 <div className="p-8 lg:p-10">
                   {/* Name and role */}
                   <div className="flex items-start gap-5 mb-6">
-                    <div className="w-16 h-16 rounded-sm gold-gradient flex items-center justify-center flex-shrink-0">
-                      <span
-                        className="text-2xl font-bold text-[#1a1a18]"
-                        style={{ fontFamily: "var(--font-display)" }}
-                      >
-                        {founder.initial}
-                      </span>
-                    </div>
+                    {person.image ? (
+                      <div className="w-20 h-20 rounded-sm overflow-hidden flex-shrink-0 ring-1 ring-[#D4A017]/30">
+                        <img
+                          src={person.image}
+                          alt={person.name}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                    ) : (
+                      <div className="w-20 h-20 rounded-sm gold-gradient flex items-center justify-center flex-shrink-0">
+                        <span
+                          className="text-3xl font-bold text-[#1a1a18]"
+                          style={{ fontFamily: "var(--font-display)" }}
+                        >
+                          {person.initial}
+                        </span>
+                      </div>
+                    )}
                     <div>
+                      <span
+                        className="inline-block text-[10px] tracking-[0.2em] uppercase text-[#8A8278] mb-1"
+                        style={{ fontFamily: "var(--font-body)", fontWeight: 600 }}
+                      >
+                        {person.tag}
+                      </span>
                       <h3
                         className="text-2xl font-bold text-[#2A2A2A]"
                         style={{ fontFamily: "var(--font-display)" }}
                       >
-                        {founder.name}
+                        {person.name}
                       </h3>
                       <p
                         className="text-[#D4A017] text-sm font-semibold uppercase tracking-wider"
                         style={{ fontFamily: "var(--font-body)" }}
                       >
-                        {founder.role}
+                        {person.role}
                       </p>
                       <p
                         className="text-[#8A8278] text-xs mt-0.5"
                         style={{ fontFamily: "var(--font-body)" }}
                       >
-                        {founder.credentials}
+                        {person.credentials}
                       </p>
                     </div>
                   </div>
@@ -132,12 +165,12 @@ export default function Founders() {
                     className="text-[#5A5550] leading-relaxed mb-8 text-sm lg:text-base"
                     style={{ fontFamily: "var(--font-body)" }}
                   >
-                    {founder.bio}
+                    {person.bio}
                   </p>
 
                   {/* Highlights */}
                   <div className="space-y-3">
-                    {founder.highlights.map((hl, j) => (
+                    {person.highlights.map((hl, j) => (
                       <div key={j} className="flex items-start gap-3">
                         <div className="w-7 h-7 rounded-sm bg-[#D4A017]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                           <hl.icon className="text-[#D4A017]" size={14} />

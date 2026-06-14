@@ -27,7 +27,7 @@ const reasons = [
     icon: Zap,
     title: "Technical Excellence",
     description:
-      "Our founders bring world-class geoscience credentials from Saudi Aramco, the Kingdom's mining sector, and leading international institutions.",
+      "Our leadership and advisors bring world-class geoscience credentials from Saudi Aramco, the Kingdom's mining sector, and leading international institutions.",
   },
   {
     icon: FileCheck,
