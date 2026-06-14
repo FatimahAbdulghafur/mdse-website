@@ -6,11 +6,13 @@ import {
   Globe,
   BookOpen,
   Cpu,
-  LineChart,
-  ClipboardCheck,
+  Layers,
+  Gauge,
+  Zap,
 } from "lucide-react";
 
 const MAHDI_IMG = `${import.meta.env.BASE_URL}images/mahdi.jpg`;
+const TOLUN_LOGO = `${import.meta.env.BASE_URL}images/tolun-icon.svg`;
 
 const people = [
   {
@@ -20,6 +22,7 @@ const people = [
     role: "Founder, CEO & Owner",
     credentials: "PhD, MSc",
     image: MAHDI_IMG,
+    logo: null,
     bio: "Senior energy executive and exploration geoscientist with 35+ years across oil, gas and mining. Former Saudi Aramco Senior Geological Consultant with a record of adding multi-million barrels of oil and several trillion cubic feet (Tcf) of gas to exploration portfolios. Led joint-venture programmes with international oil companies (IOCs) including Shell, TotalEnergies, Repsol, Sinopec, Eni and Lukoil. Recent leadership includes COO & VP at Raphael Energy Group and consultant/adviser to Halliburton, KOC and Axiom Exploration, expanding into mineral exploration and energy-transition technologies.",
     highlights: [
       { icon: GraduationCap, text: "PhD RWTH Aachen · MSc Colorado School of Mines" },
@@ -31,17 +34,18 @@ const people = [
   },
   {
     kind: "advisor" as const,
-    tag: "Advisor",
+    tag: "Technology Advisor",
     name: "Tolun AI",
-    role: "Strategic & Technical Advisor",
-    credentials: "Independent Advisory Firm",
+    role: "Agentic AI for Subsurface Intelligence",
+    credentials: "Joint geophysical inversion · quantified uncertainty",
     image: null,
-    bio: "An independent strategic and technical advisory firm supporting MDSE with AI-enabled geoscience analysis, market and competitive intelligence, and rigorous partner and proposal evaluation. Tolun AI brings advanced analytical capability to MDSE's technical due diligence — helping the Establishment select the right international drilling partners and structure each engagement for delivery in the Kingdom. Tolun AI advises; MDSE decides and executes.",
+    logo: TOLUN_LOGO,
+    bio: "A vertically integrated, agentic-AI company for mining. Tolun AI's platform turns drillhole and geophysical data into drill-ready 3D subsurface models — with uncertainty quantified, not assumed. Production AI agents wrap a deterministic, peer-reviewed inversion engine spanning gravity, magnetics, magnetotellurics, EM, and surface-wave methods, inverted jointly so each dataset constrains the others. As MDSE's technology advisor, Tolun AI brings this subsurface intelligence to the evaluation of targets, partners, and programmes in the Kingdom.",
     highlights: [
-      { icon: Cpu, text: "AI-enabled geoscience & data analysis" },
-      { icon: LineChart, text: "Market & competitive intelligence" },
-      { icon: ClipboardCheck, text: "Partner & proposal evaluation support" },
-      { icon: Globe, text: "Independent advisory · global expertise" },
+      { icon: Cpu, text: "Agentic AI over a peer-reviewed inversion engine" },
+      { icon: Layers, text: "Joint inversion: gravity, magnetics, MT, EM, seismic" },
+      { icon: Gauge, text: "Bayesian uncertainty — quantified, not assumed" },
+      { icon: Zap, text: "Drill-ready 3D subsurface products in days" },
     ],
     initial: "T",
   },
@@ -113,7 +117,16 @@ export default function Founders() {
                 <div className="p-8 lg:p-10">
                   {/* Name and role */}
                   <div className="flex items-start gap-5 mb-6">
-                    {person.image ? (
+                    {person.logo ? (
+                      <div className="w-20 h-20 rounded-sm bg-white flex items-center justify-center flex-shrink-0 ring-1 ring-[#D4A017]/20 p-1.5">
+                        <img
+                          src={person.logo}
+                          alt={`${person.name} logo`}
+                          className="w-full h-full object-contain"
+                          loading="lazy"
+                        />
+                      </div>
+                    ) : person.image ? (
                       <div className="w-20 h-20 rounded-sm overflow-hidden flex-shrink-0 ring-1 ring-[#D4A017]/30">
                         <img
                           src={person.image}

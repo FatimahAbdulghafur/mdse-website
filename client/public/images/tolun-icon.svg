@@ -1,0 +1,17 @@
+<svg width="128" height="135" viewBox="0 0 120 135" xmlns="http://www.w3.org/2000/svg">
+  <defs><clipPath id="tolunIconClip"><circle cx="60" cy="52" r="42"/></clipPath></defs>
+  <circle cx="60" cy="52" r="42" fill="#1e293b" stroke="#eab308" stroke-width="2.5"/>
+  <g clip-path="url(#tolunIconClip)">
+    <rect x="16" y="14" width="88" height="20" fill="#0d9488" opacity="0.30"/>
+    <rect x="16" y="34" width="88" height="17" fill="#06b6d4" opacity="0.32"/>
+    <rect x="16" y="51" width="88" height="17" fill="#8b5cf6" opacity="0.32"/>
+    <rect x="16" y="68" width="88" height="30" fill="#f43f5e" opacity="0.28"/>
+    <line x1="16" y1="34" x2="104" y2="34" stroke="#94a3b8" stroke-width="0.6" opacity="0.55"/>
+    <line x1="16" y1="51" x2="104" y2="51" stroke="#94a3b8" stroke-width="0.6" opacity="0.55"/>
+    <line x1="16" y1="68" x2="104" y2="68" stroke="#94a3b8" stroke-width="0.6" opacity="0.55"/>
+    <circle cx="68" cy="58" r="7.5" fill="#eab308" opacity="0.6"/>
+    <circle cx="68" cy="58" r="4" fill="#eab308"/>
+  </g>
+  <path d="M32,106 Q60,116 88,106" fill="none" stroke="#14b8a6" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M25,119 Q60,130 95,119" fill="none" stroke="#14b8a6" stroke-width="2.2" opacity="0.7" stroke-linecap="round"/>
+</svg>
