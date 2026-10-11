@@ -81,7 +81,7 @@ export default function Footer() {
               className="text-stone-600 text-sm mt-3"
               style={{ fontFamily: "var(--font-body)" }}
             >
-              info@mdse.sa
+              info@mdsarabia.com
             </p>
           </div>
         </div>

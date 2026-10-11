@@ -14,7 +14,7 @@ export default function Contact() {
     message: "",
   });
 
-  const CONTACT_EMAIL = "info@mdse.sa";
+  const CONTACT_EMAIL = "info@mdsarabia.com";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -100,7 +100,7 @@ export default function Contact() {
                       className="text-[#2A2A2A] font-medium"
                       style={{ fontFamily: "var(--font-body)" }}
                     >
-                      info@mdse.sa
+                      info@mdsarabia.com
                     </p>
                   </div>
                 </div>
