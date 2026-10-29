@@ -118,11 +118,11 @@ export default function Founders() {
                   {/* Name and role */}
                   <div className="flex items-start gap-5 mb-6">
                     {person.logo ? (
-                      <div className="h-20 w-44 sm:w-52 rounded-sm bg-white flex items-center justify-center flex-shrink-0 ring-1 ring-[#D4A017]/20 p-1.5">
+                      <div className="h-20 flex items-center flex-shrink-0">
                         <img
                           src={person.logo}
                           alt={`${person.name} logo`}
-                          className="w-full h-full object-contain"
+                          className="h-20 w-auto"
                           loading="lazy"
                         />
                       </div>
