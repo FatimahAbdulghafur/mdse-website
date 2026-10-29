@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 const MAHDI_IMG = `${import.meta.env.BASE_URL}images/mahdi.jpg`;
-const TOLUN_LOGO = `${import.meta.env.BASE_URL}images/tolun-mark.svg`;
+const TOLUN_LOGO = `${import.meta.env.BASE_URL}images/tolun-logo-tagline.svg`;
 
 const people = [
   {
@@ -118,7 +118,7 @@ export default function Founders() {
                   {/* Name and role */}
                   <div className="flex items-start gap-5 mb-6">
                     {person.logo ? (
-                      <div className="w-20 h-20 rounded-sm bg-white flex items-center justify-center flex-shrink-0 ring-1 ring-[#D4A017]/30">
+                      <div className="h-20 w-44 sm:w-52 rounded-sm bg-white flex items-center justify-center flex-shrink-0 ring-1 ring-[#D4A017]/20 p-1.5">
                         <img
                           src={person.logo}
                           alt={`${person.name} logo`}
