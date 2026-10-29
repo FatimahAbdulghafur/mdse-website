@@ -36,8 +36,8 @@ const people = [
     kind: "advisor" as const,
     tag: "Technology Partner",
     name: "Tolun AI",
-    role: "The Intelligence Core for Mining",
-    credentials: "Agentic AI across the whole mining lifecycle · an agent at every step",
+    role: "",
+    credentials: "Agentic AI across the whole mining lifecycle",
     website: "https://tolun.ai",
     image: null,
     logo: TOLUN_LOGO,
@@ -159,12 +159,14 @@ export default function Founders() {
                       >
                         {person.name}
                       </h3>
-                      <p
-                        className="text-[#D4A017] text-sm font-semibold uppercase tracking-wider"
-                        style={{ fontFamily: "var(--font-body)" }}
-                      >
-                        {person.role}
-                      </p>
+                      {person.role && (
+                        <p
+                          className="text-[#D4A017] text-sm font-semibold uppercase tracking-wider"
+                          style={{ fontFamily: "var(--font-body)" }}
+                        >
+                          {person.role}
+                        </p>
+                      )}
                       <p
                         className="text-[#8A8278] text-xs mt-0.5"
                         style={{ fontFamily: "var(--font-body)" }}
