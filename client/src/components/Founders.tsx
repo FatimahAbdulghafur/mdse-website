@@ -38,6 +38,7 @@ const people = [
     name: "Tolun AI",
     role: "The Intelligence Core for Mining",
     credentials: "Agentic AI across the whole mining lifecycle · an agent at every step",
+    website: "https://tolun.ai",
     image: null,
     logo: TOLUN_LOGO,
     bio: "Tolun AI is the agentic-AI intelligence core for mining across the whole lifecycle. Working with us, it sits behind every service we offer, from drilling contracting and legal and operational support to geoscience, geotechnical, field and manpower work. Its automated workflow puts an agent at every step: reading the data and modelling the ground, survey and drill planning, targeting and the resource estimate, reporting, development, operations and closure.",
@@ -170,6 +171,17 @@ export default function Founders() {
                       >
                         {person.credentials}
                       </p>
+                      {"website" in person && person.website && (
+                        <a
+                          href={person.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block mt-1.5 text-xs font-semibold text-[#B8860B] hover:text-[#D4A017] underline underline-offset-2"
+                          style={{ fontFamily: "var(--font-body)" }}
+                        >
+                          {person.website.replace("https://", "")}
+                        </a>
+                      )}
                     </div>
                   </div>
 
