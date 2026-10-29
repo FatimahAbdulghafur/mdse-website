@@ -82,7 +82,7 @@ export default function Founders() {
             className="text-[#D4A017] text-xs tracking-[0.3em] uppercase mb-4"
             style={{ fontFamily: "var(--font-body)", fontWeight: 600 }}
           >
-            Leadership &amp; Advisory
+            Leadership, Advisory &amp; Technology Partner
           </p>
           <h2
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2A2A2A] leading-tight mb-6"
