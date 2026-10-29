@@ -89,7 +89,7 @@ export default function WhyMDSE() {
                 style={{ fontFamily: "var(--font-display)" }}
               >
                 Why Choose{" "}
-                <span className="gold-text">MDSE</span>
+                <span className="gold-text">MDS</span>
               </h2>
               <p
                 className="text-stone-400 mt-4 text-sm lg:text-base"

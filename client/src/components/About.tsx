@@ -46,7 +46,7 @@ export default function About() {
 
             <div className="space-y-5 text-[#5A5550] leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
               <p className="text-base lg:text-lg">
-                Mining &amp; Drilling Services Establishment (MDSE) was founded to serve
+                Mining &amp; Drilling Services (MDS) was founded to serve
                 Saudi Arabia's rapidly expanding mining sector. As the Kingdom accelerates
                 its mineral exploration under Vision 2030, the need for a trusted local
                 partner that understands both the technical demands of drilling operations

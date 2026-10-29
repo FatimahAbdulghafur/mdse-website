@@ -49,7 +49,7 @@ export default function Vision() {
                 infrastructure, regulations, and partnerships needed to unlock this potential.
               </p>
               <p className="text-base lg:text-lg">
-                MDSE was purpose-built for this moment. We understand that realizing the
+                MDS was purpose-built for this moment. We understand that realizing the
                 mining vision requires more than equipment and expertise — it requires a
                 trusted intermediary who can bridge the gap between international
                 capabilities and local requirements, ensuring that every project

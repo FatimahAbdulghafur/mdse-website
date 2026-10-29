@@ -40,7 +40,7 @@ const people = [
     credentials: "Joint geophysical inversion · quantified uncertainty",
     image: null,
     logo: TOLUN_LOGO,
-    bio: "A vertically integrated, agentic-AI company for mining. Tolun AI's platform turns drillhole and geophysical data into drill-ready 3D subsurface models — with uncertainty quantified, not assumed. Production AI agents wrap a deterministic, peer-reviewed inversion engine spanning gravity, magnetics, magnetotellurics, EM, and surface-wave methods, inverted jointly so each dataset constrains the others. As MDSE's technology advisor, Tolun AI brings this subsurface intelligence to the evaluation of targets, partners, and programmes in the Kingdom.",
+    bio: "A vertically integrated, agentic-AI company for mining. Tolun AI's platform turns drillhole and geophysical data into drill-ready 3D subsurface models — with uncertainty quantified, not assumed. Production AI agents wrap a deterministic, peer-reviewed inversion engine spanning gravity, magnetics, magnetotellurics, EM, and surface-wave methods, inverted jointly so each dataset constrains the others. As MDS's technology advisor, Tolun AI brings this subsurface intelligence to the evaluation of targets, partners, and programmes in the Kingdom.",
     highlights: [
       { icon: Cpu, text: "Agentic AI over a peer-reviewed inversion engine" },
       { icon: Layers, text: "Joint inversion: gravity, magnetics, MT, EM, seismic" },

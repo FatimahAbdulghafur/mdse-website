@@ -35,7 +35,7 @@ export default function Hero() {
             className="text-[#D4A017] text-sm sm:text-base tracking-[0.3em] uppercase mb-6"
             style={{ fontFamily: "var(--font-body)", fontWeight: 500 }}
           >
-            Mining &amp; Drilling Services Establishment
+            Mining &amp; Drilling Services
           </p>
         </motion.div>
 

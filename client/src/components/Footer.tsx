@@ -2,7 +2,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Leadership", href: "#founders" },
-  { label: "Why MDSE", href: "#why-mdse" },
+  { label: "Why MDS", href: "#why-mdse" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -83,8 +83,7 @@ export default function Footer() {
             className="text-stone-700 text-xs"
             style={{ fontFamily: "var(--font-body)" }}
           >
-            &copy; {new Date().getFullYear()} Mining &amp; Drilling Services
-            Establishment. All rights reserved.
+            &copy; {new Date().getFullYear()} Mining &amp; Drilling Services. All rights reserved.
           </p>
           <div className="flex items-center gap-2">
             <div className="w-6 h-[1px] gold-gradient" />

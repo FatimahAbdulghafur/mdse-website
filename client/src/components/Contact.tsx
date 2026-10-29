@@ -18,7 +18,7 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`[MDSE Inquiry] ${formData.subject}`);
+    const subject = encodeURIComponent(`[MDS Inquiry] ${formData.subject}`);
     const body = encodeURIComponent(
       `Name: ${formData.name}\nCompany: ${formData.company || "—"}\nEmail: ${formData.email}\n\n${formData.message}`
     );
@@ -64,7 +64,7 @@ export default function Contact() {
           >
             Whether you are a Saudi mining company seeking drilling services or an
             international provider looking to enter the Kingdom, we are ready to
-            discuss how MDSE can support your goals.
+            discuss how MDS can support your goals.
           </p>
         </motion.div>
 

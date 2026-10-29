@@ -6,7 +6,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Leadership", href: "#founders" },
-  { label: "Why MDSE", href: "#why-mdse" },
+  { label: "Why MDS", href: "#why-mdse" },
   { label: "Contact", href: "#contact" },
 ];
 
