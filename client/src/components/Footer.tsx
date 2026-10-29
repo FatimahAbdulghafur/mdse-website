@@ -18,20 +18,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <div className="mb-4">
-              <span
-                className="text-2xl font-bold tracking-wider gold-text"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
-                MDSE
-              </span>
-              <p
-                className="text-stone-500 text-xs tracking-[0.15em] uppercase mt-1"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                Mining & Drilling Services Establishment
-              </p>
-            </div>
+            <img
+              src={`${import.meta.env.BASE_URL}images/mds-logo.svg`}
+              alt="MDS — Mining & Drilling Services"
+              className="h-16 w-auto mb-4"
+            />
             <p
               className="text-stone-600 text-sm leading-relaxed max-w-xs"
               style={{ fontFamily: "var(--font-body)" }}

@@ -45,22 +45,11 @@ export default function Navbar() {
             }}
             className="flex items-center gap-3"
           >
-            <div className="flex flex-col">
-              <span
-                className="text-xl lg:text-2xl font-bold tracking-wider gold-text"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
-                MDSE
-              </span>
-              <span
-                className={`text-[9px] lg:text-[10px] tracking-[0.2em] uppercase transition-colors duration-500 ${
-                  scrolled ? "text-stone-400" : "text-white/60"
-                }`}
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                Mining & Drilling
-              </span>
-            </div>
+            <img
+              src={`${import.meta.env.BASE_URL}images/mds-logo.svg`}
+              alt="MDS — Mining & Drilling Services"
+              className="h-11 lg:h-14 w-auto"
+            />
           </a>
 
           {/* Desktop nav */}
