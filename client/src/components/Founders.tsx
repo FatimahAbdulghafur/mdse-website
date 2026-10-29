@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 const MAHDI_IMG = `${import.meta.env.BASE_URL}images/mahdi.jpg`;
-const TOLUN_LOGO = `${import.meta.env.BASE_URL}images/tolun-logo-tagline.svg`;
+const TOLUN_LOGO = `${import.meta.env.BASE_URL}images/tolun-mark.svg`;
 
 const people = [
   {
@@ -95,7 +95,7 @@ export default function Founders() {
             style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
           >
             Decades of geoscience, exploration, and mining leadership — backed by
-            an independent technical advisor — channeled into building a trusted
+            a technology partner — channeled into building a trusted
             mining services partner for Saudi Arabia.
           </p>
         </motion.div>
@@ -108,9 +108,9 @@ export default function Founders() {
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 + i * 0.2 }}
-              className="group"
+              className="group h-full"
             >
-              <div className="bg-white rounded-sm border border-[#D4A017]/10 shadow-lg shadow-black/5 overflow-hidden hover:shadow-xl hover:shadow-[#D4A017]/5 transition-all duration-500">
+              <div className="h-full bg-white rounded-sm border border-[#D4A017]/10 shadow-lg shadow-black/5 overflow-hidden hover:shadow-xl hover:shadow-[#D4A017]/5 transition-all duration-500">
                 {/* Header band */}
                 <div className="relative h-3 gold-gradient" />
 
@@ -118,7 +118,7 @@ export default function Founders() {
                   {/* Name and role */}
                   <div className="flex items-start gap-5 mb-6">
                     {person.logo ? (
-                      <div className="h-20 w-44 sm:w-52 rounded-sm bg-white flex items-center justify-center flex-shrink-0 ring-1 ring-[#D4A017]/20 p-1.5">
+                      <div className="w-20 h-20 rounded-sm bg-white flex items-center justify-center flex-shrink-0 ring-1 ring-[#D4A017]/30">
                         <img
                           src={person.logo}
                           alt={`${person.name} logo`}
